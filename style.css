@@ -3,7 +3,7 @@
 *{margin:0;
   padding:0;
   box-sizing: border-box;
-  /* font-size: 16px; */
+  font-size: 16px;
   font-family: var(--font-family_from_instruction);
 }
 :root{
@@ -12,7 +12,7 @@
 --color_for_explanation_font: hsl(201, 11%, 66%);
 --bg_color_of_button_IOS_and_active_color_for_icon_and_footer_item:#26baa4;
 --bg_color_of_button_MAC:hsl(233, 100%, 69%);
---size_of_ALL_font_other_than_title_font_and_button_font:1.125rem;
+--size_of_ALL_font_other_than_title_font_and_button_font:1rem;
 --size_of_main_title:2rem;
 --size_of_small_title:1.8rem;
 --weight_of_thick_font:700;
@@ -31,15 +31,14 @@ body{
 color:var(--color_for_title_font_and_footeritem_and_icon)
 }
 .button_IOS, .button_MAC{
-padding:12px 80px;
+padding:10px 0px;
 border-radius: 20px;
 text-align: center;
-font-size: 1.2rem;
 font-weight: var(--weight_of_thick_font);
 color:white;
 height:40px;
 font-weight: var(--weight_of_thick_font);
-width:280px;
+width:300px;
 }
 .button_IOS:active, .button_MAC:active{
   opacity: 0.7;
@@ -56,7 +55,7 @@ flex-direction: column;
 align-items: center;
 text-align: center;
 justify-content: space-evenly;
-padding:50px;
+padding:50px 30px;
 height:4400px;
 margin: auto;
 }
@@ -94,6 +93,9 @@ background-color: var(--bg_color_of_button_IOS_and_active_color_for_icon_and_foo
 box-shadow:  0px 3px hsl(233, 100%, 50%);
 background-color: var(--bg_color_of_button_MAC);
 }
+.onerowflex{
+  height:600px;
+}
 .compic{
 height:200px;
 width:280px;
@@ -105,6 +107,7 @@ justify-content: space-around;
 flex-direction: column;
 height:100px;
 align-items: center;
+margin-bottom: 30px;
 }
 
 .devpic{
@@ -213,19 +216,19 @@ margin: auto;
 height:3500px
 }
 .buttonflex{
-  align-content: space-between;
-  width: 370px;
+  align-content: center;
+  width: 430px;
   flex-direction: row;
   margin-bottom: 0px;
   justify-content: space-between;
 
 }
-.main{
-width:535px;
-}
+
 .button_IOS, .button_MAC{
-  padding:12px 28px;
-  width:175px;
+  width:200px;
+  height:40px;
+
+  
 
 }
 
@@ -241,6 +244,9 @@ width:535px;
   :root{
 --size_of_small_title:1.8rem;
   }
+  .main{
+    width:720px;
+    }
   .flex{
     height:3300px
     }
@@ -263,7 +269,7 @@ width:535px;
 
 .sub{
 font-size:1.1rem;
-max-width: 291px;
+max-width: 380px;
 }
 .smallbox{
 margin-top: 30px;
@@ -271,8 +277,8 @@ text-align: left;
 align-items:flex-start;
 } 
 .devpic{
-  width: 750px;
-  height:480px;
+  width: 900px;
+  height:550px;
 margin-top: 50px;
 }
 
