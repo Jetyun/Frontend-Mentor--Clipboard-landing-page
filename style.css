@@ -1,0 +1,352 @@
+/* arrangement (small screen to big screen): universal,  :root,  body, scombined class(A to Z), class (according to design layout), and media quary  */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+*{margin:0;
+  padding:0;
+  box-sizing: border-box;
+  /* font-size: 16px; */
+  font-family: var(--font-family_from_instruction);
+}
+:root{
+--font-family_from_instruction: 'Bai Jamjuree', sans-serif;
+--color_for_title_font_and_footeritem_and_icon:hsl(210, 10%, 33%);
+--color_for_explanation_font: hsl(201, 11%, 66%);
+--bg_color_of_button_IOS_and_active_color_for_icon_and_footer_item:#26baa4;
+--bg_color_of_button_MAC:hsl(233, 100%, 69%);
+--size_of_ALL_font_other_than_title_font_and_button_font:1.125rem;
+--size_of_main_title:2rem;
+--size_of_small_title:1.8rem;
+--weight_of_thick_font:700;
+--weight_of_thin_font:400;
+}
+body{
+  background-image: url("images/bg-header-mobile.png");
+  background-color: white;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  }
+
+/* combined class */
+.big_title_in_desktop_med_in_mobile, .footeritem, .icon, .main_title,  .small_title_in_desktop_med_in_mobile {
+color:var(--color_for_title_font_and_footeritem_and_icon)
+}
+.button_IOS, .button_MAC{
+padding:12px 80px;
+border-radius: 20px;
+text-align: center;
+font-size: 1.2rem;
+font-weight: var(--weight_of_thick_font);
+color:white;
+height:40px;
+font-weight: var(--weight_of_thick_font);
+width:280px;
+}
+.button_IOS:active, .button_MAC:active{
+  opacity: 0.7;
+  }
+.footeritem:hover, .icon:hover{
+  color:var(--bg_color_of_button_IOS_and_active_color_for_icon_and_footer_item);
+}
+
+/* individual class */
+
+.flex{
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+justify-content: space-evenly;
+padding:50px;
+height:4400px;
+margin: auto;
+}
+
+.main_logo{
+height:100px;
+width:100px;
+/*  */
+
+}
+.main_title{
+font-size: var(--size_of_main_title);
+}
+.margin-bottom-decreased{
+  margin-bottom: -20px;
+}
+.explanation{
+  font-size: var(--size_of_ALL_font_other_than_title_font_and_button_font);
+  color:var(--color_for_explanation_font);
+  line-height: 25px;
+}
+.buttonflex{
+height:120px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+white-space: nowrap;
+margin-bottom: 70px;
+}
+.button_IOS{
+box-shadow: 0px 3px hsl(171, 90%, 27%);
+background-color: var(--bg_color_of_button_IOS_and_active_color_for_icon_and_footer_item);
+}
+.button_MAC{
+box-shadow:  0px 3px hsl(233, 100%, 50%);
+background-color: var(--bg_color_of_button_MAC);
+}
+.compic{
+height:200px;
+width:280px;
+margin-bottom: 30px;
+}
+.smallbox{
+  display:flex;
+justify-content: space-around;
+flex-direction: column;
+height:100px;
+align-items: center;
+}
+
+.devpic{
+  height:180px;
+width:280px;
+}
+.big_title_in_desktop_med_in_mobile{
+font-size: var(--size_of_small_title);
+}
+.small_title_in_desktop_med_in_mobile{
+  font-size: var(--size_of_small_title);
+}
+.margin-bottom{
+  margin-bottom:70px;
+}
+.tworowflex{
+height:650px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+
+.box{
+display:flex;
+justify-content: space-around;
+flex-direction: column;
+height:200px;
+align-items: center;
+}
+
+.threerowflex{
+height:500px;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+margin: 50px 0;
+align-items: center;
+}
+.goopic{
+height:30px;
+width:110px;
+}
+.ibmpic{
+height:30px;
+width:90px;
+}
+.micpic{
+width:110px;
+height:30px;
+}
+.hppic{
+height: 35px;
+width: 90px;
+
+}
+.vecpic{
+  height: 20px;
+  width: 90px;
+}
+.footer{
+  background-color: rgb(243, 243, 243);
+  text-align: center;
+  height: 430px;
+}
+  
+
+.footerflex{
+  height:350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: var(--size_of_ALL_font_other_than_title_font_and_button_font);
+}
+.smallicon{
+  align-self:center ;
+}
+.flexicon{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+width:150px;
+margin: auto;
+}
+
+
+.icon:hover{
+  filter:invert(66%) sepia(18%) saturate(1535%) hue-rotate(122deg) brightness(90%) contrast(89%);}
+
+.attribution { font-size: 11px; text-align: center;  margin-top: 20px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (min-width: 500px){
+  :root{
+--size_of_ALL_font_other_than_title_font_and_button_font:1.3rem;
+--size_of_main_title:2.9rem; 
+--size_of_big_title:2.3rem;
+
+  }
+  body{
+    background-image: url("images/bg-header-desktop.png");
+    }
+
+.flex{
+height:3500px
+}
+.buttonflex{
+  align-content: space-between;
+  width: 370px;
+  flex-direction: row;
+  margin-bottom: 0px;
+  justify-content: space-between;
+
+}
+.main{
+width:535px;
+}
+.button_IOS, .button_MAC{
+  padding:12px 28px;
+  width:175px;
+
+}
+
+.big_title_in_desktop_med_in_mobile{
+  font-size: var(--size_of_big_title);
+  }
+
+  .footer{
+    height:430px;
+  }
+}
+  @media screen and (min-width: 1000px){
+  :root{
+--size_of_small_title:1.8rem;
+  }
+  .flex{
+    height:3300px
+    }
+  .small_title_in_desktop_med_in_mobile{
+    font-size: var(--size_of_small_title);
+  }
+
+  .onerowflex{
+    width:1000px
+  }
+  
+.compic{
+  width: 600px;
+  height:480px;
+  float:left;
+  display: block;
+  margin-right:80px;
+
+}
+
+.sub{
+font-size:1.1rem;
+max-width: 291px;
+}
+.smallbox{
+margin-top: 30px;
+text-align: left;
+align-items:flex-start;
+} 
+.devpic{
+  width: 750px;
+  height:480px;
+margin-top: 50px;
+}
+
+
+.tworowflex{
+flex-direction: row;
+height:250px;
+width:1000px
+}
+
+.threerowflex{
+flex-direction: row;
+height:200px;
+margin: 0;
+width:1000px;
+justify-content: space-between;
+}
+.goopic{
+  width:145px;
+  height:39px;
+}
+.ibmpic{
+height:40px;
+width:119px;
+}
+.micpic{
+width:141px;
+height:25px;
+}
+.hppic{
+height: 40px;
+width: 115px;
+
+}
+.vecpic{
+  height: 25px;
+  width: 105px;
+}
+
+.footer{
+display: flex;
+flex-direction: row;
+align-content: space-between;
+padding:0 80px;
+height:100px;
+
+}
+.footerflex{
+flex-wrap: wrap;
+align-content: center;
+height:55px;
+width:500px;
+justify-content: flex-start;
+margin-top: 30px;
+margin-left: 80px;
+}
+.footeritem{
+padding-right: 60px;
+margin-bottom: 5px;
+text-align: left;
+}
+}
+
+@media screen and (min-width: 1440px){
+  .onerowflex{
+    width:1440px
+  }
+  .compic{
+    width: 680px;
+    height:480px;
+  
+  }
+.smallicon{
+  margin-left: 220px;
+}
+
+}
